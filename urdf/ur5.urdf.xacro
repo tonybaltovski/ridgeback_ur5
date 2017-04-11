@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+  <xacro:property name="reflect" value="-1" />
+  <!-- Spawn arm -->
+  <xacro:ur5_robot prefix="ur5_arm_" joint_limited="true"/>
+  <!-- Join arm -->
+  <joint name="ur5_arm_base" type="fixed">
+    <parent link="mid_mount" />
+    <child link="ur5_arm_base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

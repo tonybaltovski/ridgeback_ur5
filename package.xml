@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ridgeback_ur5</name>
+  <version>0.0.0</version>
+  <description>The ridgeback_ur5 package</description>
+
+  <maintainer email="tony.baltovski@gmail.com">Tony Baltovski</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>ridgeback_description</exec_depend>
+  <exec_depend>ur_description</exec_depend>
+
+  <export>
+  </export>
+
+</package>
